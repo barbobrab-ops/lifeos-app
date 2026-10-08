@@ -119,3 +119,6 @@ body{background:radial-gradient(ellipse at 82% -15%,#243a15 0%,transparent 40%),
  #mobile-nav .nav-btn{flex:1 1 0;min-width:0;max-width:none;min-height:51px;padding:5px 1px 3px;font-size:clamp(7px,2vw,9px);white-space:normal;overflow-wrap:anywhere;border-radius:10px}
  #mobile-nav .nav-btn span{font-size:18px;margin-bottom:2px}
 }
+
+/* Nascondi indicatore cloud flottante su iPhone, senza disabilitare il sync */
+@media(max-width:650px){#cloud-status,.cloud-status{display:none!important}}
