@@ -214,3 +214,6 @@ body:has(#mobile-nav .nav-btn[data-page="stats"].active){--section-accent:#61daf
 
 /* Colore alimentazione */
 #nav .nav-btn[data-page="nutrition"],#mobile-nav .nav-btn[data-page="nutrition"]{--item-color:#ff9e69;--item-bg:#473025}body:has(#mobile-nav .nav-btn[data-page="nutrition"].active){--section-accent:#ff9e69;--section-glow:#473025}.nutrition-page .stat{color:var(--section-accent)}.nutrition-page .stat small{font-size:14px;color:var(--muted)}@media(max-width:650px){#mobile-nav .nav-btn[data-page="nutrition"]{font-size:clamp(6.5px,1.6vw,8px)!important}}
+
+/* Icone lineari uniformi in navigazione e Home */
+.lifeos-line-icon{display:block;width:23px;height:23px;flex-shrink:0}.mobile-shortcut-icon .lifeos-line-icon{width:32px;height:32px}.mobile-shortcut[data-page="goals"] .mobile-shortcut-icon{color:#ff666d}.mobile-shortcut[data-page="training"] .mobile-shortcut-icon{color:#ffdb4a}.mobile-shortcut[data-page="journal"] .mobile-shortcut-icon{color:#568cff}.mobile-shortcut[data-page="nutrition"] .mobile-shortcut-icon{color:#ff9e69}.mobile-shortcut[data-page="calendar"] .mobile-shortcut-icon{color:#ffd34d}.mobile-shortcut[data-page="stats"] .mobile-shortcut-icon{color:#61dafa}#mobile-nav .nav-btn span .lifeos-line-icon{width:21px;height:21px}
