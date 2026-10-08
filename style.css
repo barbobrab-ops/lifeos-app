@@ -79,3 +79,43 @@ body{background:radial-gradient(ellipse at 82% -15%,#243a15 0%,transparent 40%),
  .cloud-status{font-size:11px}
 }
 @media (max-width:370px){.workspace{padding-left:12px;padding-right:12px}.card{padding:15px 13px}#mobile-nav .nav-btn{min-width:58px}}
+
+
+/* LifeOS Mobile 3.1 — dimensioni fluide e nessun overflow orizzontale */
+@media(max-width:650px){
+ html,body{width:100%;max-width:100%;overflow-x:hidden}
+ body{font-size:14px;line-height:1.45}
+ .shell,.workspace,#app,.top,.hero,.card,form,.grid,.form-grid{min-width:0;max-width:100%}
+ .workspace{width:100%;padding:16px 12px calc(103px + env(safe-area-inset-bottom))}
+ #app *{min-width:0}
+ #app img,#app svg,#app canvas,#app table{max-width:100%}
+ .top{gap:6px;margin-bottom:16px}
+ .top h1{font-size:clamp(23px,6.5vw,29px);letter-spacing:-.6px;overflow-wrap:anywhere}
+ .top p{font-size:12px}
+ .eyebrow{font-size:9px;letter-spacing:1.4px}
+ .grid{gap:9px}
+ .card{padding:14px 12px;border-radius:16px;overflow-wrap:anywhere}
+ .card h2{font-size:15px;margin-bottom:10px}
+ .card h3{font-size:14px}
+ .stat{font-size:clamp(22px,7vw,29px)}
+ .label,.hint,.muted-note{font-size:11px;overflow-wrap:anywhere}
+ .hero{padding:17px 14px;border-radius:18px}
+ .hero h2{font-size:clamp(21px,6vw,26px)}
+ .hero p{font-size:12px}
+ .section-title{font-size:18px}
+ .btn,.subtabs button{font-size:12px;padding:9px 11px;min-height:39px;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+ .btn.tiny{font-size:11px;padding:7px 9px}
+ .actions{gap:7px}
+ .actions>*{flex:0 1 auto}
+ .field{max-width:100%;font-size:16px}
+ .row>*{max-width:100%;overflow-wrap:anywhere}
+ .task{gap:9px}
+ .task .task-name{font-size:13px}
+ .cal-grid{grid-template-columns:repeat(7,minmax(0,1fr));gap:2px}
+ .cal-day,.cal-blank{min-width:0;min-height:43px}
+ .cal-day{padding:3px 2px;font-size:10px;overflow:hidden}
+ .cal-dot{font-size:8px}
+ #mobile-nav{gap:1px;justify-content:space-between;overflow-x:hidden;padding:7px 4px calc(7px + env(safe-area-inset-bottom))}
+ #mobile-nav .nav-btn{flex:1 1 0;min-width:0;max-width:none;min-height:51px;padding:5px 1px 3px;font-size:clamp(7px,2vw,9px);white-space:normal;overflow-wrap:anywhere;border-radius:10px}
+ #mobile-nav .nav-btn span{font-size:18px;margin-bottom:2px}
+}
