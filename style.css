@@ -176,3 +176,6 @@ body{background:radial-gradient(ellipse at 82% -15%,#243a15 0%,transparent 40%),
 
 /* Esci integrato nella barra mobile */
 @media(max-width:650px){#logout-dock{display:none!important}#mobile-nav .nav-logout{color:#e7b5b5!important}#mobile-nav .nav-logout span{font-size:17px}#mobile-nav{display:flex!important;justify-content:space-around;gap:0}#mobile-nav .nav-btn{min-width:0!important;flex:1 1 0!important;padding-left:1px!important;padding-right:1px!important;font-size:9px!important;white-space:nowrap}}
+
+/* Diario palestra semplice */
+.gym-simple>.card:last-child{grid-column:1/-1}.gym-progress-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #344333}.gym-progress-row>div{display:grid;gap:4px;min-width:0}.gym-progress-row strong{overflow-wrap:anywhere}.gym-progress-row small{font-size:11px;color:#aab9a5}.gym-delta{white-space:nowrap;color:#b7ff59;font-weight:700;font-size:12px}@media(max-width:650px){.gym-simple>.card{grid-column:1/-1}.gym-progress-row{align-items:flex-start}.gym-delta{padding-top:3px}}
