@@ -202,3 +202,12 @@ body:has(#mobile-nav .nav-btn[data-page="stats"].active){--section-accent:#61daf
 #nav .nav-btn:not(.active) span,#mobile-nav .nav-btn:not(.active) span{color:var(--item-color,#b7ff59)}
 .top h1{color:var(--section-accent)}.workspace .card h2{border-left:3px solid var(--section-accent);padding-left:10px}
 @media(max-width:650px){#mobile-nav .nav-btn.active{background:var(--item-bg,#273b23)!important;color:var(--item-color,#b7ff59)!important}#mobile-nav .nav-btn{transition:background .15s,color .15s}}
+
+/* Pulsanti e controlli seguono il colore della sezione attiva */
+.workspace .btn:not(.secondary):not(.danger),.workspace button.btn:not(.secondary):not(.danger){background:var(--section-accent,#b7ff59)!important;color:#101410!important}
+.workspace .btn.secondary:not(.danger){border:1px solid var(--section-accent,#b7ff59)!important;color:var(--section-accent,#b7ff59)!important;background:transparent!important}
+.workspace .btn.secondary:not(.danger):hover{background:var(--section-glow,#273b23)!important}
+.workspace .progress>div,.workspace .bar>div{background:var(--section-accent,#b7ff59)!important}
+.workspace input[type="checkbox"],.workspace input[type="radio"]{accent-color:var(--section-accent,#b7ff59)}
+.workspace button:focus-visible,.workspace input:focus-visible,.workspace textarea:focus-visible,.workspace select:focus-visible{outline-color:var(--section-accent,#b7ff59)}
+.workspace .eyebrow{color:var(--section-accent,#b7ff59)}
