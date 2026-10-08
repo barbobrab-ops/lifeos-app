@@ -154,3 +154,6 @@ body{background:radial-gradient(ellipse at 82% -15%,#243a15 0%,transparent 40%),
  #app .form-grid>*{grid-column:1/-1;min-width:0}
  #app .card{overflow:hidden}
 }
+
+/* Logout sempre accessibile in fondo, senza coprire i contenuti */
+#logout-dock{position:fixed;right:18px;bottom:16px;z-index:11}#logout-dock #logout{border:1px solid #40513a;background:#253024;color:#e5f4dc;box-shadow:0 4px 16px #0008}#logout-dock #logout[hidden]{display:none!important}@media(max-width:650px){#logout-dock{right:12px;bottom:calc(77px + env(safe-area-inset-bottom))}#logout-dock #logout{font-size:11px;min-height:34px;padding:7px 12px;border-radius:99px}}
