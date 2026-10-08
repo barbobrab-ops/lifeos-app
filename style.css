@@ -142,3 +142,15 @@ body{background:radial-gradient(ellipse at 82% -15%,#243a15 0%,transparent 40%),
  .mobile-daily-goals .task{align-items:center}
  .mobile-daily-goals .progress{margin-top:15px}
 }
+
+/* Mobile forms full-width: avoid half-column cards and date overflow */
+@media(max-width:650px){
+ #app>.grid{display:grid;grid-template-columns:minmax(0,1fr)!important;width:100%}
+ #app>.grid>.card,#app>.grid>section,#app>.grid>article{grid-column:1/-1!important;width:100%;max-width:100%;min-width:0}
+ #app .card form,#app .card form>*{min-width:0;max-width:100%}
+ #app .card .field,#app input[type="date"],#app input[type="datetime-local"],#app input[type="time"],#app select,#app textarea{display:block;width:100%;max-width:100%;min-width:0;box-sizing:border-box}
+ #app input[type="date"]{-webkit-appearance:none;appearance:none;font-size:16px;min-height:45px;padding:9px 10px}
+ #app .form-grid{display:grid;grid-template-columns:minmax(0,1fr)!important}
+ #app .form-grid>*{grid-column:1/-1;min-width:0}
+ #app .card{overflow:hidden}
+}
