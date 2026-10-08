@@ -217,3 +217,6 @@ body:has(#mobile-nav .nav-btn[data-page="stats"].active){--section-accent:#61daf
 
 /* Icone lineari uniformi in navigazione e Home */
 .lifeos-line-icon{display:block;width:23px;height:23px;flex-shrink:0}.mobile-shortcut-icon .lifeos-line-icon{width:32px;height:32px}.mobile-shortcut[data-page="goals"] .mobile-shortcut-icon{color:#ff666d}.mobile-shortcut[data-page="training"] .mobile-shortcut-icon{color:#ffdb4a}.mobile-shortcut[data-page="journal"] .mobile-shortcut-icon{color:#568cff}.mobile-shortcut[data-page="nutrition"] .mobile-shortcut-icon{color:#ff9e69}.mobile-shortcut[data-page="calendar"] .mobile-shortcut-icon{color:#ffd34d}.mobile-shortcut[data-page="stats"] .mobile-shortcut-icon{color:#61dafa}#mobile-nav .nav-btn span .lifeos-line-icon{width:21px;height:21px}
+
+/* Nasconde la scheda delle sessioni calcio nelle Statistiche */
+body:has(#mobile-nav .nav-btn[data-page="stats"].active) #app>.grid>.card:nth-child(3){display:none!important}
