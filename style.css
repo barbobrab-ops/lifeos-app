@@ -173,3 +173,6 @@ body{background:radial-gradient(ellipse at 82% -15%,#243a15 0%,transparent 40%),
 
 /* Modalita allenamento */
 .gym-session{grid-column:1/-1;border:1px solid #a4db67!important}.session-exercise{padding:14px 0;border-top:1px solid #344533;display:grid;gap:8px}.session-exercise>small{color:#aebdaa}.session-sets{display:grid;gap:7px}.session-set{display:flex!important;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;background:#243123}.session-set>span:first-of-type{flex:1}.session-set input[type=checkbox]{width:19px;height:19px;accent-color:#b7ff59;flex:none}.session-set .session-weight{width:95px!important;max-width:95px!important;min-width:0!important;margin:0!important;text-align:center}.session-set>span:last-child{font-size:12px;color:#b7c5b0}@media(max-width:650px){.session-set{gap:7px}.session-set .session-weight{width:78px!important;max-width:78px!important}}
+
+/* Esci integrato nella barra mobile */
+@media(max-width:650px){#logout-dock{display:none!important}#mobile-nav .nav-logout{color:#e7b5b5!important}#mobile-nav .nav-logout span{font-size:17px}#mobile-nav{display:flex!important;justify-content:space-around;gap:0}#mobile-nav .nav-btn{min-width:0!important;flex:1 1 0!important;padding-left:1px!important;padding-right:1px!important;font-size:9px!important;white-space:nowrap}}
