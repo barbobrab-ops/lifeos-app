@@ -211,3 +211,6 @@ body:has(#mobile-nav .nav-btn[data-page="stats"].active){--section-accent:#61daf
 .workspace input[type="checkbox"],.workspace input[type="radio"]{accent-color:var(--section-accent,#b7ff59)}
 .workspace button:focus-visible,.workspace input:focus-visible,.workspace textarea:focus-visible,.workspace select:focus-visible{outline-color:var(--section-accent,#b7ff59)}
 .workspace .eyebrow{color:var(--section-accent,#b7ff59)}
+
+/* Colore alimentazione */
+#nav .nav-btn[data-page="nutrition"],#mobile-nav .nav-btn[data-page="nutrition"]{--item-color:#ff9e69;--item-bg:#473025}body:has(#mobile-nav .nav-btn[data-page="nutrition"].active){--section-accent:#ff9e69;--section-glow:#473025}.nutrition-page .stat{color:var(--section-accent)}.nutrition-page .stat small{font-size:14px;color:var(--muted)}@media(max-width:650px){#mobile-nav .nav-btn[data-page="nutrition"]{font-size:clamp(6.5px,1.6vw,8px)!important}}
