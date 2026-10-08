@@ -122,3 +122,23 @@ body{background:radial-gradient(ellipse at 82% -15%,#243a15 0%,transparent 40%),
 
 /* Nascondi indicatore cloud flottante su iPhone, senza disabilitare il sync */
 @media(max-width:650px){#cloud-status,.cloud-status{display:none!important}}
+
+/* Home iPhone: sei scorciatoie grandi e promemoria giornaliero */
+.mobile-home{display:none}
+@media(max-width:650px){
+ .mobile-home{display:block}
+ .mobile-home-intro{margin:3px 0 17px}
+ .mobile-home-intro h2{font-size:clamp(20px,5.6vw,25px);line-height:1.22;letter-spacing:-.6px;margin:7px 0}
+ .mobile-shortcuts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-bottom:20px}
+ .mobile-shortcut{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;position:relative;min-width:0;min-height:112px;padding:16px 13px;border:1px solid #354633;border-radius:19px;background:linear-gradient(145deg,#1c291b,#121a13);color:#f0f6eb;font-weight:750;font-size:clamp(13px,3.7vw,16px);text-align:left;overflow-wrap:anywhere;box-shadow:0 8px 20px #0003}
+ .mobile-shortcut:active{background:#2c4224;transform:scale(.98)}
+ .mobile-shortcut-icon{font-size:30px;line-height:1;color:#b7ff59}
+ .mobile-shortcut-arrow{position:absolute;top:12px;right:14px;color:#b7ff59;font-size:16px}
+ .mobile-daily-goals{padding:18px 15px;border-radius:20px}
+ .mobile-daily-goals .row{flex-wrap:nowrap;align-items:center}
+ .mobile-daily-goals h2{font-size:17px;margin:5px 0 0}
+ .mobile-goal-count{flex:none;background:#293b23;color:#b7ff59;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:800}
+ .mobile-daily-goals .empty{font-size:13px;padding:14px 0}
+ .mobile-daily-goals .task{align-items:center}
+ .mobile-daily-goals .progress{margin-top:15px}
+}
