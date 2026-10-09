@@ -220,3 +220,6 @@ body:has(#mobile-nav .nav-btn[data-page="stats"].active){--section-accent:#61daf
 
 /* Nasconde la scheda delle sessioni calcio nelle Statistiche */
 body:has(#mobile-nav .nav-btn[data-page="stats"].active) #app>.grid>.card:nth-child(3){display:none!important}
+
+/* Archivio Diario per mese e giorno */
+.journal-month,.journal-day{border:1px solid #344039;border-radius:12px;margin:10px 0;overflow:hidden}.journal-month>summary,.journal-day>summary{cursor:pointer;padding:13px 14px;font-weight:650;display:flex;align-items:center;justify-content:space-between;gap:12px;list-style:none}.journal-month>summary::-webkit-details-marker,.journal-day>summary::-webkit-details-marker{display:none}.journal-month>summary:before,.journal-day>summary:before{content:'›';color:#568cff;font-size:22px;transition:transform .15s}.journal-month[open]>summary:before,.journal-day[open]>summary:before{transform:rotate(90deg)}.journal-month>summary small,.journal-day>summary small{color:#9ba9a5;font-size:11px;font-weight:400}.journal-month[open]{padding-bottom:8px}.journal-month>.journal-day{margin:7px 10px}.journal-day{background:#171d1c}.journal-day>.record{margin:8px 10px}.journal-month[hidden]{display:none!important}
